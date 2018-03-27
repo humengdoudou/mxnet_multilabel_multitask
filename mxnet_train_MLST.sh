@@ -1,0 +1,14 @@
+python mxnet_train_resnext_multilabelsingletask.py \
+--epoch 0 \
+--model /root/mxnet_dpn/models/models_org/resnext-50 \
+--batch-size 32 \
+--num-labels 2 \
+--data-train  /root/mxnet_dpn/mxnet/tools/mnist224_MLST_train.lst \
+--image-train /root/mxnet_datasets/ \
+--data-val    /root/mxnet_dpn/mxnet/tools/mnist224_MLST_test.lst \
+--image-val   /root/mxnet_datasets/ \
+--num-examples 60000 \
+--lr 0.001 \
+--gpus 0 \
+--num-epoch 30 \
+--save-result /root/mxnet_dpn/models/mnist224_resnext50_MLST/resnext50
